@@ -131,3 +131,36 @@ js=js.replace("let category='all';","let category=new URLSearchParams(window.loc
 js=js.replace("if(search)search.addEventListener('input',filter);","if(search)search.addEventListener('input',filter);filter();")
 p.write_text(js)
 print("Client-first portfolio applied; all visual previews use real exported PDF page images.")
+
+# Final layout pass: prevent type/artwork collisions and vary all 40 library visuals.
+p=D/"site.css"
+fix=r"""
+/* Reserve separate visual zones for category typography and actual page previews. */
+.service-art-type{max-width:40%;width:40%;left:25px;z-index:5;overflow-wrap:normal;}
+.service-art-type strong{font-size:clamp(22px,2.2vw,33px);line-height:1.09;letter-spacing:-1.2px;overflow-wrap:break-word;}
+.service-art .service-publication-primary{left:52%;width:25%;max-height:77%;} 
+.service-art .service-publication-secondary{left:74%;right:2%;width:23%;max-height:70%;}
+.service-reports .service-art-type{left:28px;top:35px;max-width:38%;width:38%;}
+.service-reports .service-art-type strong{font-size:clamp(22px,2.2vw,32px);}
+.service-reports .service-publication-primary{left:51%;width:27%;top:12%;}
+.service-reports .service-publication-secondary{left:75%;width:23%;top:22%;}
+.service-editorial .service-art-type{left:27px;bottom:30px;max-width:37%;width:37%;}
+.service-editorial .service-art-type strong{font-size:clamp(23px,2.7vw,38px);}
+.service-editorial .service-publication-primary{left:51%;width:27%;}
+.service-editorial .service-publication-secondary{left:74%;width:24%;}
+.service-catalogs .service-art-type{left:26px;max-width:39%;width:39%;}
+.service-catalogs .service-art-type strong{font-size:clamp(20px,2.3vw,32px);letter-spacing:-1.1px;overflow-wrap:anywhere;}
+.service-catalogs .service-publication-primary{left:50%;width:27%;}
+.service-catalogs .service-publication-secondary{left:75%;width:24%;}
+.service-workbooks .service-art-type{left:26px;max-width:39%;width:39%;}
+.service-workbooks .service-art-type strong{font-size:clamp(21px,2.3vw,31px);}
+.service-workbooks .service-publication-primary{left:52%;width:26%;}
+.service-workbooks .service-publication-secondary{left:75%;width:23%;}
+@media(max-width:1000px){.service-art-type strong{font-size:23px!important}.service-small{font-size:8px;letter-spacing:1px}.service-art .service-publication-primary{left:52%;width:26%}.service-art .service-publication-secondary{left:75%;width:23%}}
+@media(max-width:1000px){.service-art .service-publication-primary{left:60%!important;width:20%!important}.service-art .service-publication-secondary{left:81%!important;right:0!important;width:18%!important}}\n@media(max-width:700px){.service-art-type{left:16px!important;max-width:42%!important;width:42%!important}.service-art-type strong{font-size:clamp(20px,5.2vw,27px)!important;letter-spacing:-.7px!important}.service-art .service-publication-primary{left:51%;width:26%;}.service-art .service-publication-secondary{left:75%;width:23%;}.service-art-mark{right:10px;bottom:8px}.service-small{font-size:7px;letter-spacing:.7px}}
+"""
+s=p.read_text()
+if "/* Reserve separate visual zones" in s:s=s.split("/* Reserve separate visual zones")[0].rstrip()+"\n"
+p.write_text(s+fix)
+import runpy
+runpy.run_path(str(ROOT/"vary-library.py"),run_name="__main__")

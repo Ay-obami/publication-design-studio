@@ -67,3 +67,66 @@
 @media(max-width:900px){.service-art{height:300px}.service-art-type strong{font-size:25px}.freelance-steps{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.hero h1{font-size:clamp(46px,10vw,65px);letter-spacing:-2.5px}.service-gallery{grid-template-columns:1fr;gap:30px}.service-art{height:285px}.service-art-type strong{font-size:30px}.service-editorial .service-art-type strong{font-size:32px}.service-catalogs .service-art-type strong{font-size:30px}.service-tile-info h3{font-size:20px}.freelance-steps{grid-template-columns:1fr 1fr;gap:15px}.freelance-steps h3{font-size:17px}.freelance-cta{flex-direction:column;align-items:start;margin:60px 0 55px}.freelance-cta .button{width:100%;text-align:center}}
 @media(max-width:380px){.service-art{height:252px}.service-art-type strong{font-size:24px}.freelance-steps{grid-template-columns:1fr}}
+
+/* Reserve separate visual zones for category typography and actual page previews. */
+.service-art-type{max-width:40%;width:40%;left:25px;z-index:5;overflow-wrap:normal;}
+.service-art-type strong{font-size:clamp(22px,2.2vw,33px);line-height:1.09;letter-spacing:-1.2px;overflow-wrap:break-word;}
+.service-art .service-publication-primary{left:52%;width:25%;max-height:77%;} 
+.service-art .service-publication-secondary{left:74%;right:2%;width:23%;max-height:70%;}
+.service-reports .service-art-type{left:28px;top:35px;max-width:38%;width:38%;}
+.service-reports .service-art-type strong{font-size:clamp(22px,2.2vw,32px);}
+.service-reports .service-publication-primary{left:51%;width:27%;top:12%;}
+.service-reports .service-publication-secondary{left:75%;width:23%;top:22%;}
+.service-editorial .service-art-type{left:27px;bottom:30px;max-width:37%;width:37%;}
+.service-editorial .service-art-type strong{font-size:clamp(23px,2.7vw,38px);}
+.service-editorial .service-publication-primary{left:51%;width:27%;}
+.service-editorial .service-publication-secondary{left:74%;width:24%;}
+.service-catalogs .service-art-type{left:26px;max-width:39%;width:39%;}
+.service-catalogs .service-art-type strong{font-size:clamp(20px,2.3vw,32px);letter-spacing:-1.1px;overflow-wrap:anywhere;}
+.service-catalogs .service-publication-primary{left:50%;width:27%;}
+.service-catalogs .service-publication-secondary{left:75%;width:24%;}
+.service-workbooks .service-art-type{left:26px;max-width:39%;width:39%;}
+.service-workbooks .service-art-type strong{font-size:clamp(21px,2.3vw,31px);}
+.service-workbooks .service-publication-primary{left:52%;width:26%;}
+.service-workbooks .service-publication-secondary{left:75%;width:23%;}
+@media(max-width:1000px){.service-art-type strong{font-size:23px!important}.service-small{font-size:8px;letter-spacing:1px}.service-art .service-publication-primary{left:52%;width:26%}.service-art .service-publication-secondary{left:75%;width:23%}}
+@media(max-width:1000px){.service-art .service-publication-primary{left:60%!important;width:20%!important}.service-art .service-publication-secondary{left:81%!important;right:0!important;width:18%!important}}\n@media(max-width:700px){.service-art-type{left:16px!important;max-width:42%!important;width:42%!important}.service-art-type strong{font-size:clamp(20px,5.2vw,27px)!important;letter-spacing:-.7px!important}.service-art .service-publication-primary{left:51%;width:26%;}.service-art .service-publication-secondary{left:75%;width:23%;}.service-art-mark{right:10px;bottom:8px}.service-small{font-size:7px;letter-spacing:.7px}}
+
+/* Varied library presentation — composed only from actual InDesign PDF pages */
+.library .portfolio-preview{height:260px;background:var(--preview-bg);color:var(--preview-ink);position:relative;border:0;overflow:hidden;isolation:isolate}
+.library .preview-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.library .preview-page{position:absolute;max-width:none;object-fit:contain;height:auto;width:auto;max-height:90%;max-width:80%;filter:drop-shadow(5px 9px 9px #0002);transition:transform .3s ease}
+.library .project-card a:hover .preview-page{transform:none}
+.library .preview-index{position:absolute;z-index:4;right:12px;bottom:9px;font-size:9px;letter-spacing:1.2px;font-family:monospace;font-weight:700;opacity:.8}
+.library-art-solo .preview-front{height:87%;max-width:75%;transform:rotate(-2deg)}
+.library-art-solo a:hover .preview-front{transform:rotate(-2deg) translateY(-5px)}
+.library-art-spread .preview-left{height:71%;max-width:45%;left:9%;transform:rotate(-7deg)}
+.library-art-spread .preview-right{height:78%;max-width:48%;right:8%;transform:rotate(6deg)}
+.library-art-overlap .preview-front{height:78%;max-width:54%;left:11%;z-index:2;transform:rotate(-6deg)}
+.library-art-overlap .preview-behind{height:72%;max-width:54%;right:7%;transform:rotate(7deg)}
+.library-art-folio .preview-front{height:87%;max-width:70%;left:8%;transform:rotate(0deg)}
+.library-art-folio .preview-inset{height:51%;max-width:46%;right:7%;bottom:7%;z-index:2;transform:rotate(5deg)}
+.library-art-strip .preview-panel{height:63%;max-width:34%;position:relative;margin:0 -1.5%;transform:rotate(-3deg)}
+.library-art-strip .preview-panel:nth-child(2){height:77%;z-index:2;transform:rotate(2deg)}
+.library-art-strip .preview-panel:nth-child(3){transform:rotate(6deg)}
+.library-art-centerpiece .preview-front{height:78%;max-width:64%;left:14%;z-index:2;transform:rotate(-3deg)}
+.library-art-centerpiece .preview-behind{height:66%;max-width:46%;right:3%;top:9%;opacity:.85;transform:rotate(9deg)}
+.library-art-split .preview-left{height:85%;max-width:44%;left:5%;transform:rotate(0deg)}
+.library-art-split .preview-right{height:76%;max-width:44%;right:5%;transform:rotate(0deg)}
+.library-art-tall .preview-front{height:91%;max-width:64%;left:21%;transform:rotate(3deg)}
+.library-art-gallery .preview-gallery-page{height:62%;max-width:31%;position:relative;margin:0 1%;transform:translateY(-10px)}
+.library-art-gallery .preview-gallery-page:nth-child(2){transform:translateY(24px)}
+.library-art-gallery .preview-gallery-page:nth-child(3){transform:translateY(-16px)}
+.library-art-offset .preview-front{height:77%;max-width:56%;left:8%;top:8%;z-index:2;transform:rotate(-5deg)}
+.library-art-offset .preview-offset{height:73%;max-width:52%;right:7%;bottom:5%;transform:rotate(8deg)}
+.library .project-card .card-info{padding-top:11px}
+.library .project-card .card-info h3{font-size:18px;font-weight:500}
+.library .project-card .card-info p{font-size:11px}
+.library .project-card.library-feature{grid-column:span 2}
+.library .project-card.library-feature .portfolio-preview{height:340px}
+.library .project-card.library-feature .preview-page{max-height:92%}
+.library .project-card.library-feature .card-info h3{font-size:23px}
+@media(max-width:1050px){.library .portfolio-preview{height:225px}.library .project-card.library-feature .portfolio-preview{height:300px}}
+@media(max-width:700px){.library .portfolio-preview{height:200px}.library .project-card.library-feature .portfolio-preview{height:255px}.library .project-card .card-info h3{font-size:15px}}
+@media(max-width:420px){.library .portfolio-preview{height:175px}.library .project-card .card-info h3{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.library .preview-page{transition:none}}
