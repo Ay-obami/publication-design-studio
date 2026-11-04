@@ -126,3 +126,9 @@ urls=["/","/about/","/credits/"]+["/work/"+b["slug"]+"/" for b in books]
 (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join("<url><loc>"+host+x+"</loc></url>" for x in urls)+"</urlset>")
 (OUT/"robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: "+host+"/sitemap.xml\n")
 print("COMPLETE",len(books),total,flush=True)
+# Refresh the deployable snapshot only after all 40 builds finish successfully.
+shutil.rmtree(ROOT/"dist",ignore_errors=True)
+shutil.copytree(OUT,ROOT/"dist")
+import runpy
+runpy.run_path(str(ROOT/"refine-website.py"),run_name="__main__")
+print("CLIENT-FOCUSED DIST READY",flush=True)

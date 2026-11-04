@@ -4,8 +4,10 @@ Git-deployed static publication portfolio presenting **40 native Adobe InDesign 
 
 Source collection: `Approved-Portfolio/05-Design-Upgrade-In-Progress/DELIVERY/PACKAGE-MANIFEST.json`. The private native INDD/IDML packages, provenance records and current quality reviews remain outside the public website repository.
 
-Build: `python3 build-40.py` on the authorised workstation with `pymupdf` and `Pillow`, after installing the current source packages. Git tracks the complete `dist/` output so Vercel serves this exact snapshot without needing local source access.
+Build: `python3 build-40.py` on the authorised workstation with `pymupdf` and `Pillow`, and current source packages. This rebuilds 40 publication PDF page readers and then runs `refine-website.py` for the differentiated, freelancer-focused page design. To edit only the website layout without touching the PDFs, run `python3 refine-website.py`. Git tracks the complete `dist/` output so Vercel serves this exact snapshot without needing local source access.
 
 Run: `python3 -m http.server 8080 --directory dist`.
 
 This is independent, self-initiated portfolio work, not a record of paid client commissions. Quality upgrades are ongoing for some publications. Photography is credited in the individual source packages.
+
+Visual design: category features use original exported publication covers and pages. All four presentations are authored HTML/CSS (no image generation) and vary in layout, color and typography. The original native InDesign source remains untouched.
