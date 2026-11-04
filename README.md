@@ -30,3 +30,7 @@ Run `curate-portfolio.py` **after** `refine-website.py` and `render-quality.py` 
 
 ### Six editorial plates (website visual upgrade)
 `editorial-plates-v4.py` is the last step in `build-40.py`: it composes six distinct selected-project presentations using only the existing exported InDesign page assets. Full-width architecture and annual-report plates frame two asymmetrical editorial rows; fashion, information design, workbook and fold-out each use project-specific page selections. The script can be rerun without accumulating duplicate HTML/CSS. The complete archive, individual project pages, original PDFs, and Fit Page reader are unchanged. QA: `node qa-plates-v4.cjs`.
+
+
+### Final homepage polish (2026-11-04)
+`polish-homepage-v5.py` composes a multi-publication hero from the existing, unmodified Material, Gridshift, Stillhouse and Northline InDesign-exported pages instead of repeating the Halvorsen feature. It improves vertical rhythm, rewrites repetitive presentation copy, and fixes service-category navigation to `/work/?category=...#library`. This is the last deterministic step in `build-40.py`. It makes no edits to INDD/IDML or PDF source documents.

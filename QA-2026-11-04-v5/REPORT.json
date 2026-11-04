@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Website-only visual polish; no changes to original publication packages",
+  "visual_improvements": [
+    "Cross-publication hero using four original exported publication pages",
+    "More consistent section spacing and stronger hierarchy",
+    "Removed repeated copy describing image provenance",
+    "Repaired service links to the dedicated filtered archive",
+    "Retained six editorial plate compositions"
+  ],
+  "responsive_tests": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "featured_projects": 6,
+  "archive_projects": 40,
+  "image_validation": true,
+  "reader_fit_default": true,
+  "service_link_validation": "Reports filter correctly active on archive, 8 matching projects",
+  "visual_review": [
+    "hero-desktop.jpg",
+    "hero-mobile.jpg"
+  ],
+  "underlying_publications_modified": false
+}

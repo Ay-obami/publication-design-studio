@@ -141,4 +141,6 @@ runpy.run_path(str(ROOT/"fix-reading-layout.py"),run_name="__main__")
 runpy.run_path(str(ROOT/"editorial-website-v3.py"),run_name="__main__")
 # Art-directed six-project homepage plates; original publication content untouched.
 runpy.run_path(str(ROOT/"editorial-plates-v4.py"),run_name="__main__")
+# Final responsive hero, spacing, link and copy polish.
+runpy.run_path(str(ROOT/"polish-homepage-v5.py"),run_name="__main__")
 print("CLIENT-FOCUSED DIST READY",flush=True)
