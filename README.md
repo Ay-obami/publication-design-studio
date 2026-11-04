@@ -13,3 +13,10 @@ This is independent, self-initiated portfolio work, not a record of paid client 
 Visual design: category features use original exported publication covers and pages. All four presentations are authored HTML/CSS (no image generation) and vary in layout, color and typography. The original native InDesign source remains untouched.
 
 Image-quality pipeline: `python3 render-quality.py` re-renders all page images from the canonical original PDF packages at 1680px or 2000px width (for selected projects), WebP 89, 460px thumbnails and 2400px portfolio compositions. It does not upscale the previous WebPs. This is also invoked at the end of `build-40.py`. The source packages and original PDFs remain unchanged.
+
+
+### Portfolio editorial structure
+
+The homepage is curated rather than displaying all 40 publications; the complete searchable archive is at `/work/`. Six selected projects contain three editorial boards composed from the original exported InDesign pages, followed by the existing full document reader and PDF. The 20-page vector PDF lookbook is `/downloads/ayobami-selected-publications-2026.pdf`.
+
+Run `curate-portfolio.py` **after** `refine-website.py` and `render-quality.py` when rebuilding the website. It relies on Python BeautifulSoup4 and PyMuPDF and does not generate new illustration artwork. `build-40.py` orchestrates these steps in order. No AI-generated assets are used.

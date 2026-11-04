@@ -4,7 +4,7 @@ if(menu)menu.addEventListener('click',()=>{const on=menu.getAttribute('aria-expa
 const cards=[...document.querySelectorAll('.library .project-card')],search=document.querySelector('.search'),filters=[...document.querySelectorAll('.filter')],count=document.querySelector('#result-count'),empty=document.querySelector('.empty');
 let category=new URLSearchParams(window.location.search).get('category')||'all';if(!['all','Reports','Editorial','Catalogs','Brochures'].includes(category))category='all';filters.forEach(f=>f.setAttribute('aria-pressed',String(f.dataset.filter===category)));
 function filter(){const q=(search?.value||'').trim().toLowerCase();let n=0;cards.forEach(c=>{const show=(category==='all'||c.dataset.category===category)&&c.dataset.search.includes(q);c.hidden=!show;if(show)n++});if(count)count.textContent=n+' publication'+(n===1?'':'s');if(empty)empty.hidden=n!==0;}
-filters.forEach(f=>f.addEventListener('click',()=>{category=f.dataset.filter;filters.forEach(x=>x.setAttribute('aria-pressed',String(x===f)));filter()}));if(search)search.addEventListener('input',filter);filter();filter();
+filters.forEach(f=>f.addEventListener('click',()=>{category=f.dataset.filter;filters.forEach(x=>x.setAttribute('aria-pressed',String(x===f)));filter()}));if(search)search.addEventListener('input',filter);filter();
 const modal=document.querySelector('#page-reader');if(!modal)return;
 const pages=[...document.querySelectorAll('.page-thumb')],im=modal.querySelector('img'),counter=modal.querySelector('[data-counter]'),prev=modal.querySelector('[data-prev]'),next=modal.querySelector('[data-next]'),zoom=modal.querySelector('[data-zoom]'),content=modal.querySelector('.reader-content');
 let i=0,origin=null;

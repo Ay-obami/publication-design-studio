@@ -133,4 +133,6 @@ import runpy
 runpy.run_path(str(ROOT/"refine-website.py"),run_name="__main__")
 # Restore high-fidelity website imagery from the canonical PDFs, not prior web assets.
 runpy.run_path(str(ROOT/"render-quality.py"),run_name="__main__")
+# Build the client-first editorial case studies, separate archive, and portfolio PDF.
+runpy.run_path(str(ROOT/"curate-portfolio.py"),run_name="__main__")
 print("CLIENT-FOCUSED DIST READY",flush=True)

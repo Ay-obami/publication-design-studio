@@ -246,3 +246,71 @@
 @media(max-width:1000px){#selected .selected-stage{height:300px}#selected .selected-folio,#selected .selected-workbook,#selected .selected-industrial{height:340px}}
 @media(max-width:700px){#selected .selected-stage{height:285px!important}}
 @media(max-width:380px){#selected .selected-stage{height:235px!important}}
+
+/* Curated portfolio release: fewer home items, better evidence, separate full archive */
+.archive-invitation{background:#f0eee8;margin:60px 0 95px;padding:40px 48px;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.archive-invitation h2{font-family:Georgia,serif;font-size:clamp(31px,4vw,55px);font-weight:400;line-height:1.1;letter-spacing:-1.7px;margin:14px 0}
+.archive-invitation p{color:var(--muted);font-size:15px;max-width:600px}
+.archive-actions{display:flex;align-items:start;gap:18px;flex-direction:column;flex-shrink:0}
+.text-link{font-size:13px;border-bottom:1px solid currentColor;padding-bottom:6px}
+.archive-intro{padding:70px 0 48px}
+.archive-intro h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,94px);font-weight:400;line-height:1.04;letter-spacing:-3px;margin:20px 0}
+.archive-intro h1 em{color:var(--accent)}
+.archive-intro p{max-width:670px;color:var(--muted);font-size:18px}
+.archive-meta{display:flex;gap:25px;flex-wrap:wrap;font-size:13px;margin-top:34px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.archive-meta a{text-decoration:underline;text-underline-offset:4px}
+.archive-library .section-head{margin:30px 0}
+.archive-library .library{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px}
+.archive-library .library .project-card{grid-column:auto!important;padding:14px 0;border-bottom:1px solid var(--line)}
+.archive-library .library .project-card a{display:grid;grid-template-columns:142px 1fr;gap:18px;align-items:center}
+.archive-library .library .portfolio-preview,.archive-library .library .project-card.library-feature .portfolio-preview{height:105px;width:142px}
+.archive-library .library .card-info{padding:0;align-items:center}
+.archive-library .library .card-info h3,.archive-library .library .project-card.library-feature .card-info h3{font-size:17px}
+.archive-library .library .card-info p{font-size:11px}
+.archive-library .library .preview-index{font-size:7px}
+.archive-library .library .card-num{display:inline;font-size:12px}
+.curated-case-study{margin:25px 0 60px}
+.case-intro{border-top:1px solid var(--line);padding:35px 0;display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+.case-intro>.eyebrow{grid-column:1/-1}
+.case-intro h2{font-family:Georgia,serif;font-size:clamp(33px,4vw,55px);font-weight:400;line-height:1.12;letter-spacing:-1.7px;max-width:650px;margin:0}
+.case-brief{display:grid;gap:10px}
+.case-brief p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}
+.case-brief strong{color:var(--ink)}
+.case-board{margin:0 0 40px}
+.case-board-stage{height:520px;display:flex;align-items:center;justify-content:center;gap:28px;overflow:hidden;padding:38px 10%;background:#e5e2dc}
+.case-board-stage img{height:100%;width:auto;max-width:47%;min-width:0;object-fit:contain;filter:drop-shadow(7px 9px 9px #0002)}
+.case-board-01 .case-board-stage img{max-width:68%}
+.case-board-03 .case-board-stage{height:390px}
+.case-board-03 .case-board-stage img{height:92%}
+.case-board figcaption{display:flex;align-items:baseline;gap:22px;padding:14px 0 0;border-top:1px solid var(--line);margin-top:12px}
+.case-board figcaption span{font-size:11px;letter-spacing:1px;color:var(--muted)}
+.case-board figcaption strong{font-size:17px;font-weight:500}
+.case-board figcaption p{font-size:13px;color:var(--muted);margin:0}
+.case-editorial .case-board-stage{background:#33252b}
+.case-report .case-board-stage{background:#dce5ec}
+.case-workbook .case-board-stage{background:#e0eadf}
+.case-foldout .case-board-stage{background:#e9d5be}
+.case-corporate .case-board-stage{background:#293c43}
+.case-folio .case-board-stage{background:#ddd6cf}
+.case-board-01 .case-board-stage{height:610px}
+.case-board-02 .case-board-stage{height:470px}
+@media(max-width:800px){
+ .archive-invitation{padding:28px;flex-direction:column;align-items:start;gap:18px}
+ .case-intro{grid-template-columns:1fr}
+ .case-board-stage,.case-board-01 .case-board-stage{height:430px;padding:24px 5%}
+ .case-board-03 .case-board-stage{height:310px}
+ .case-board figcaption{display:block}
+ .case-board figcaption>*{display:block;margin:4px 0!important}
+}
+@media(max-width:700px){
+ .archive-library .library{grid-template-columns:1fr;gap:0}
+ .archive-library .library .project-card a{grid-template-columns:108px 1fr;gap:12px}
+ .archive-library .library .portfolio-preview,.archive-library .library .project-card.library-feature .portfolio-preview{width:108px;height:90px}
+ .archive-library .library .card-info h3{font-size:16px}
+ .archive-intro{padding:40px 0 15px}
+ .archive-meta{gap:14px}
+ .case-board-stage,.case-board-01 .case-board-stage{height:315px}
+ .case-board-02 .case-board-stage{height:300px}
+ .case-board-03 .case-board-stage{height:260px}
+ .case-board-stage img{max-width:45%}
+}
