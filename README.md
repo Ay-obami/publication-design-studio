@@ -1,9 +1,11 @@
 # Ayobami — Publication Design Studio
 
-Static publication portfolio with 25 native InDesign studies, 276 pages, category filters, search, accessible page readers and complete PDF viewing copies.
+Git-deployed static publication portfolio presenting **40 native Adobe InDesign studies** and **538 pages in the selected PDF viewing copies**. Real PDF page renders are used throughout; no AI-generated artwork is introduced into the website.
 
-Build: python3 build-site.py (requires the user-owned source publication folders, Poppler and Pillow). The complete built dist folder is tracked for reproducible static hosting.
+Source collection: `Approved-Portfolio/05-Design-Upgrade-In-Progress/DELIVERY/PACKAGE-MANIFEST.json`. The private native INDD/IDML packages, provenance records and current quality reviews remain outside the public website repository.
 
-Run: python3 -m http.server 8080 --directory dist
+Build: `python3 build-40.py` on the authorised workstation with `pymupdf` and `Pillow`, after installing the current source packages. Git tracks the complete `dist/` output so Vercel serves this exact snapshot without needing local source access.
 
-Code is supplied as project source. Photography retains the licences in the image-credit registers and PDFs. Publication studies do not claim paid-client relationships.
+Run: `python3 -m http.server 8080 --directory dist`.
+
+This is independent, self-initiated portfolio work, not a record of paid client commissions. Quality upgrades are ongoing for some publications. Photography is credited in the individual source packages.

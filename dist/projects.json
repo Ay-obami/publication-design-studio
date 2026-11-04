@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Clearpath-Coaching",
+    "slug": "clearpath-coaching",
+    "pages": 28,
+    "category": "Brochures",
+    "pdf_name": "Clearpath-Coaching-Revision02/Clearpath-Coaching-Revision02-Review.pdf"
+  },
+  {
+    "title": "Quarterly-Index",
+    "slug": "quarterly-index",
+    "pages": 28,
+    "category": "Reports",
+    "pdf_name": "Quarterly-Index-Revision03/Quarterly-Index-Revision03-Review.pdf"
+  },
+  {
+    "title": "Hearthwell",
+    "slug": "hearthwell",
+    "pages": 36,
+    "category": "Reports",
+    "pdf_name": "Hearthwell/EXPORT/Hearthwell-Screen.pdf"
+  },
+  {
+    "title": "Silence-Quarterly",
+    "slug": "silence-quarterly",
+    "pages": 32,
+    "category": "Reports",
+    "pdf_name": "Silence-Quarterly-Revision03/Silence-Quarterly-Revision03-Review.pdf"
+  },
+  {
+    "title": "Slowroad-Journal",
+    "slug": "slowroad-journal",
+    "pages": 24,
+    "category": "Editorial",
+    "pdf_name": "Slowroad-Journal/EXPORT/Slowroad-Journal-Screen.pdf"
+  },
+  {
+    "title": "Pattern",
+    "slug": "pattern",
+    "pages": 6,
+    "category": "Catalogs",
+    "pdf_name": "Pattern/EXPORT/Pattern-Screen.pdf"
+  },
+  {
+    "title": "Gridshift",
+    "slug": "gridshift",
+    "pages": 6,
+    "category": "Catalogs",
+    "pdf_name": "Gridshift/EXPORT/Gridshift-Screen.pdf"
+  },
+  {
+    "title": "Datum",
+    "slug": "datum",
+    "pages": 12,
+    "category": "Reports",
+    "pdf_name": "Datum/EXPORT/Datum-Screen.pdf"
+  },
+  {
+    "title": "Civic",
+    "slug": "civic",
+    "pages": 12,
+    "category": "Reports",
+    "pdf_name": "Civic/EXPORT/Civic-Screen.pdf"
+  },
+  {
+    "title": "Material",
+    "slug": "material",
+    "pages": 16,
+    "category": "Editorial",
+    "pdf_name": "Material/EXPORT/Material-Screen.pdf"
+  },
+  {
+    "title": "Fieldnote",
+    "slug": "fieldnote",
+    "pages": 2,
+    "category": "Editorial",
+    "pdf_name": "Fieldnote/EXPORT/Fieldnote-Screen.pdf"
+  },
+  {
+    "title": "Courtyard",
+    "slug": "courtyard",
+    "pages": 4,
+    "category": "Brochures",
+    "pdf_name": "Courtyard/EXPORT/Courtyard-Screen.pdf"
+  },
+  {
+    "title": "Thread",
+    "slug": "thread",
+    "pages": 6,
+    "category": "Catalogs",
+    "pdf_name": "Thread/EXPORT/Thread-Screen.pdf"
+  },
+  {
+    "title": "Daily-Form",
+    "slug": "daily-form",
+    "pages": 6,
+    "category": "Catalogs",
+    "pdf_name": "Daily-Form/EXPORT/Daily-Form-Screen.pdf"
+  },
+  {
+    "title": "Table",
+    "slug": "table",
+    "pages": 4,
+    "category": "Brochures",
+    "pdf_name": "Table/EXPORT/Table-Screen.pdf"
+  },
+  {
+    "title": "Neighbour",
+    "slug": "neighbour",
+    "pages": 4,
+    "category": "Editorial",
+    "pdf_name": "Neighbour/EXPORT/Neighbour-Screen.pdf"
+  },
+  {
+    "title": "Harbor",
+    "slug": "harbor",
+    "pages": 6,
+    "category": "Reports",
+    "pdf_name": "Harbor/EXPORT/Harbor-Screen.pdf"
+  },
+  {
+    "title": "Clearwater",
+    "slug": "clearwater",
+    "pages": 6,
+    "category": "Reports",
+    "pdf_name": "Clearwater/EXPORT/Clearwater-Screen.pdf"
+  },
+  {
+    "title": "Common-Ground",
+    "slug": "common-ground",
+    "pages": 6,
+    "category": "Brochures",
+    "pdf_name": "Common-Ground/EXPORT/Common-Ground-Screen.pdf"
+  },
+  {
+    "title": "Northline",
+    "slug": "northline",
+    "pages": 6,
+    "category": "Brochures",
+    "pdf_name": "Northline/EXPORT/Northline-Screen.pdf"
+  },
+  {
+    "title": "Make-Room",
+    "slug": "make-room",
+    "pages": 8,
+    "category": "Brochures",
+    "pdf_name": "Make-Room/EXPORT/Make-Room-Screen.pdf"
+  },
+  {
+    "title": "Signal",
+    "slug": "signal",
+    "pages": 8,
+    "category": "Catalogs",
+    "pdf_name": "Signal/EXPORT/Signal-Screen.pdf"
+  },
+  {
+    "title": "Structure",
+    "slug": "structure",
+    "pages": 6,
+    "category": "Editorial",
+    "pdf_name": "Structure/EXPORT/Structure-Screen.pdf"
+  },
+  {
+    "title": "Stillhouse",
+    "slug": "stillhouse",
+    "pages": 6,
+    "category": "Brochures",
+    "pdf_name": "Stillhouse/EXPORT/Stillhouse-Screen.pdf"
+  },
+  {
+    "title": "Open-House",
+    "slug": "open-house",
+    "pages": 6,
+    "category": "Brochures",
+    "pdf_name": "Open-House/EXPORT/Open-House-Screen.pdf"
+  },
+  {
+    "title": "Halvorsen-Quill",
+    "slug": "halvorsen-quill",
+    "pages": 16,
+    "category": "Brochures",
+    "pdf_name": "Halvorsen-Quill-Revision03/Halvorsen-Quill-Revision03-Review.pdf"
+  },
+  {
+    "title": "Linden-Court",
+    "slug": "linden-court",
+    "pages": 20,
+    "category": "Brochures",
+    "pdf_name": "Linden-Court/EXPORT/Linden-Court-Screen.pdf"
+  },
+  {
+    "title": "Brightmoor-Solar",
+    "slug": "brightmoor-solar",
+    "pages": 12,
+    "category": "Brochures",
+    "pdf_name": "Brightmoor-Solar/EXPORT/Brightmoor-Solar-Screen.pdf"
+  },
+  {
+    "title": "Larkfield",
+    "slug": "larkfield",
+    "pages": 8,
+    "category": "Brochures",
+    "pdf_name": "Larkfield/EXPORT/Larkfield-Screen.pdf"
+  },
+  {
+    "title": "Hollow-Pine",
+    "slug": "hollow-pine",
+    "pages": 2,
+    "category": "Brochures",
+    "pdf_name": "Hollow-Pine/EXPORT/Hollow-Pine-Screen.pdf"
+  },
+  {
+    "title": "Orlathread",
+    "slug": "orlathread",
+    "pages": 2,
+    "category": "Catalogs",
+    "pdf_name": "Orlathread-Revision03/Orlathread-Revision03-Review.pdf"
+  },
+  {
+    "title": "Aldous-Pike",
+    "slug": "aldous-pike",
+    "pages": 4,
+    "category": "Brochures",
+    "pdf_name": "Aldous-Pike/EXPORT/Aldous-Pike-Screen.pdf"
+  },
+  {
+    "title": "Kiln-Cup",
+    "slug": "kiln-cup",
+    "pages": 4,
+    "category": "Brochures",
+    "pdf_name": "Kiln-Cup/EXPORT/Kiln-Cup-Screen.pdf"
+  },
+  {
+    "title": "Wellspring-Next",
+    "slug": "wellspring-next",
+    "pages": 2,
+    "category": "Brochures",
+    "pdf_name": "Wellspring-Next/EXPORT/Wellspring-Next-Screen.pdf"
+  },
+  {
+    "title": "Halftone-Garden",
+    "slug": "halftone-garden",
+    "pages": 24,
+    "category": "Brochures",
+    "pdf_name": "Halftone-Garden/EXPORT/Halftone-Garden-Screen.pdf"
+  },
+  {
+    "title": "Tolvik",
+    "slug": "tolvik",
+    "pages": 40,
+    "category": "Brochures",
+    "pdf_name": "Tolvik/EXPORT/Tolvik-Screen.pdf"
+  },
+  {
+    "title": "Fieldnotes",
+    "slug": "fieldnotes",
+    "pages": 16,
+    "category": "Editorial",
+    "pdf_name": "Fieldnotes/EXPORT/Fieldnotes-Screen.pdf"
+  },
+  {
+    "title": "Calloway",
+    "slug": "calloway",
+    "pages": 48,
+    "category": "Brochures",
+    "pdf_name": "Calloway/EXPORT/Calloway-Screen.pdf"
+  },
+  {
+    "title": "Fernloop",
+    "slug": "fernloop",
+    "pages": 32,
+    "category": "Catalogs",
+    "pdf_name": "Fernloop/EXPORT/Fernloop-Screen.pdf"
+  },
+  {
+    "title": "Distributed-Work",
+    "slug": "distributed-work",
+    "pages": 24,
+    "category": "Reports",
+    "pdf_name": "Distributed-Work/EXPORT/Distributed-Work-Screen.pdf"
+  }
+]
