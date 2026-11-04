@@ -1,0 +1,532 @@
+[
+  {
+    "name": "01-Datum-Measurement-Catalog",
+    "title": "DATUM",
+    "format": "Technical product catalog",
+    "pages": 12,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "datum",
+    "category": "Catalogs",
+    "headline": "Product information, made easier to compare.",
+    "summary": "A technical catalog study organising measuring instruments around task, range and specification.",
+    "brief": "Keep selection guidance and product data consistent across a twelve-page document. Readers need to compare instruments without confusing range, resolution and accuracy.",
+    "details": [
+      "Editable comparison tables and product records",
+      "A stable typographic hierarchy for technical information",
+      "Credited instrument photography with clear context"
+    ],
+    "pdf": "/assets/datum/publication.pdf"
+  },
+  {
+    "name": "02-Material-Culture-Magazine",
+    "title": "MATERIAL",
+    "format": "Culture and process magazine",
+    "pages": 16,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "material",
+    "category": "Editorial",
+    "headline": "A magazine about objects, processes and places.",
+    "summary": "An editorial publication exploring clay, printing and shared reading spaces.",
+    "brief": "Move between full-page photography and sustained reading while keeping the publication coherent. The sixteen-page issue uses changes in scale and pace to separate its features.",
+    "details": [
+      "Threaded editorial text and distinct feature openers",
+      "Serif reading text, pull quotes and supporting captions",
+      "Full-image pages balanced with quieter reading spreads"
+    ],
+    "pdf": "/assets/material/publication.pdf"
+  },
+  {
+    "name": "03-Civic-Energy-Report",
+    "title": "CIVIC",
+    "format": "Business and energy report",
+    "pages": 12,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "civic",
+    "category": "Reports",
+    "headline": "Figures with context, structure and a clear sequence.",
+    "summary": "A business-report study with illustrative energy and financial data.",
+    "brief": "Turn a sample operating scenario into a navigable report. Tables, charts and explanations need consistent definitions and figures that reconcile.",
+    "details": [
+      "Native editable tables and chart artwork",
+      "Executive overview, programme plan and risk register",
+      "Sample totals reconciled across the report"
+    ],
+    "pdf": "/assets/civic/publication.pdf"
+  },
+  {
+    "name": "04-Fieldnote",
+    "title": "Fieldnote",
+    "format": "Six-panel travel roll-fold",
+    "pages": 2,
+    "size_mm": [
+      297,
+      210
+    ],
+    "slug": "fieldnote",
+    "category": "Brochures",
+    "headline": "An outdoor itinerary in six folded panels.",
+    "summary": "A roll-fold travel brochure study balancing scenic imagery with practical copy.",
+    "brief": "Arrange the outer sheet in tuck, back and front order, then create a readable three-panel itinerary on the inside.",
+    "details": [
+      "Separate outer and inner sheet arrangements",
+      "Non-printing fold guides in the source document",
+      "Panel-based copy and proportionate image crops"
+    ],
+    "pdf": "/assets/fieldnote/publication.pdf"
+  },
+  {
+    "name": "05-Courtyard",
+    "title": "Courtyard",
+    "format": "Property brochure / square bifold",
+    "pages": 4,
+    "size_mm": [
+      210,
+      210
+    ],
+    "slug": "courtyard",
+    "category": "Brochures",
+    "headline": "A compact property brochure with room to breathe.",
+    "summary": "A square-format study combining interior photography and planning information.",
+    "brief": "Use a restrained four-page sequence: cover, introduction, reference information and closing page.",
+    "details": [
+      "Square format and circular detail crop",
+      "Editable planning-allowance table",
+      "Contrasting full-image and information pages"
+    ],
+    "pdf": "/assets/courtyard/publication.pdf"
+  },
+  {
+    "name": "06-Thread",
+    "title": "Thread",
+    "format": "Fashion and material lookbook",
+    "pages": 6,
+    "size_mm": [
+      180,
+      260
+    ],
+    "slug": "thread",
+    "category": "Catalogs",
+    "headline": "Archive, street and material in one visual sequence.",
+    "summary": "A clothing and textile lookbook study with tall crops and offset compositions.",
+    "brief": "Move between a contemporary street photograph, archive displays and material detail without presenting the images as a retail collection.",
+    "details": [
+      "Tall portrait format and asymmetrical image placement",
+      "Serif headlines and large editorial numerals",
+      "A practical image-selection checklist"
+    ],
+    "pdf": "/assets/thread/publication.pdf"
+  },
+  {
+    "name": "07-Daily-Form",
+    "title": "Daily Form",
+    "format": "Beauty product catalog",
+    "pages": 6,
+    "size_mm": [
+      200,
+      250
+    ],
+    "slug": "daily-form",
+    "category": "Catalogs",
+    "headline": "A botanical catalog with a clear product hierarchy.",
+    "summary": "A beauty catalog study pairing floral photography with flat packaging illustrations.",
+    "brief": "Give each sample product a clear role and a consistent information order. The pack artwork is visibly illustrated, rather than presented as product photography.",
+    "details": [
+      "Editable vector packaging illustrations",
+      "Product names, sample sizes and prices in a stable hierarchy",
+      "A collection index and botanical detail crops"
+    ],
+    "pdf": "/assets/daily-form/publication.pdf"
+  },
+  {
+    "name": "08-Table",
+    "title": "Table",
+    "format": "Seasonal restaurant menu",
+    "pages": 4,
+    "size_mm": [
+      148,
+      297
+    ],
+    "slug": "table",
+    "category": "Brochures",
+    "headline": "A tall menu with calm, readable price alignment.",
+    "summary": "A four-page seasonal menu study with serif headings and credited food imagery.",
+    "brief": "Keep item names, supporting descriptions and prices easy to scan in a narrow page format.",
+    "details": [
+      "Consistent price alignment",
+      "Native drinks table",
+      "Tall format with restrained image use"
+    ],
+    "pdf": "/assets/table/publication.pdf"
+  },
+  {
+    "name": "09-Neighbour",
+    "title": "Neighbour",
+    "format": "Community newsletter",
+    "pages": 4,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "neighbour",
+    "category": "Editorial",
+    "headline": "A small journal with a newspaper rhythm.",
+    "summary": "A community newsletter study covering shared spaces, repair and reading.",
+    "brief": "Use a masthead, compact columns and feature photography to give four pages a clear editorial sequence.",
+    "details": [
+      "Two-column reading pages",
+      "A clear newsletter masthead and issue hierarchy",
+      "A quieter reading-list back page"
+    ],
+    "pdf": "/assets/neighbour/publication.pdf"
+  },
+  {
+    "name": "10-Harbor",
+    "title": "Harbor",
+    "format": "Company profile",
+    "pages": 6,
+    "size_mm": [
+      210,
+      260
+    ],
+    "slug": "harbor",
+    "category": "Reports",
+    "headline": "A company profile organised around a concrete offer.",
+    "summary": "A fictional operations-studio profile with services and a practical engagement sequence.",
+    "brief": "Explain what the sample business does, how an engagement progresses and where responsibility sits.",
+    "details": [
+      "Three-column service structure",
+      "An editable stage-and-output table",
+      "Strong cover colour and a quieter interior system"
+    ],
+    "pdf": "/assets/harbor/publication.pdf"
+  },
+  {
+    "name": "11-Clearwater",
+    "title": "Clearwater",
+    "format": "Annual report",
+    "pages": 6,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "clearwater",
+    "category": "Reports",
+    "headline": "A concise annual review that shows its working.",
+    "summary": "A six-page annual-report study using reconciled illustrative figures.",
+    "brief": "Separate workload, resolution rate and simplified financial information so the report remains easy to interpret.",
+    "details": [
+      "Native bar-chart artwork",
+      "An editable financial summary",
+      "Explicit sample-data definitions and rounded percentages"
+    ],
+    "pdf": "/assets/clearwater/publication.pdf"
+  },
+  {
+    "name": "12-Common-Ground",
+    "title": "Common Ground",
+    "format": "Nonprofit impact report",
+    "pages": 6,
+    "size_mm": [
+      200,
+      250
+    ],
+    "slug": "common-ground",
+    "category": "Reports",
+    "headline": "Participation, presented with context.",
+    "summary": "A nonprofit impact-report study using illustrative programme activity.",
+    "brief": "Distinguish activity measures from claims of long-term impact, and show how sample resource totals reconcile.",
+    "details": [
+      "Editable activity and resource tables",
+      "Clear metric hierarchy",
+      "A distinct green identity and observational photography"
+    ],
+    "pdf": "/assets/common-ground/publication.pdf"
+  },
+  {
+    "name": "13-Gridshift",
+    "title": "Gridshift",
+    "format": "Operational white paper",
+    "pages": 6,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "gridshift",
+    "category": "Reports",
+    "headline": "A practice paper built for sustained reading.",
+    "summary": "A white-paper study about clearer internal operating documents.",
+    "brief": "Create a short argument with an executive summary, practical framework and review method.",
+    "details": [
+      "Readable two-column text",
+      "An editable comparison table",
+      "A restrained monochrome system with a lime accent"
+    ],
+    "pdf": "/assets/gridshift/publication.pdf"
+  },
+  {
+    "name": "14-Northline",
+    "title": "Northline",
+    "format": "Publication project proposal",
+    "pages": 6,
+    "size_mm": [
+      260,
+      190
+    ],
+    "slug": "northline",
+    "category": "Reports",
+    "headline": "A proposal with a visible scope and review sequence.",
+    "summary": "A landscape publication-proposal study for a visitor-guide brief.",
+    "brief": "Make deliverables, responsibilities and approvals easy to compare before production begins.",
+    "details": [
+      "Editable scope and programme tables",
+      "Landscape format with numbered sections",
+      "A clear separation of client inputs and change control"
+    ],
+    "pdf": "/assets/northline/publication.pdf"
+  },
+  {
+    "name": "15-Make-Room",
+    "title": "Make Room",
+    "format": "Planning workbook",
+    "pages": 8,
+    "size_mm": [
+      210,
+      297
+    ],
+    "slug": "make-room",
+    "category": "Other formats",
+    "headline": "A workbook that leaves space for the reader.",
+    "summary": "An eight-page planning workbook with prompts, comparison cells and writing lines.",
+    "brief": "Balance instruction with usable writing space, rather than filling every page with decorative content.",
+    "details": [
+      "Editable prompts and comparison table",
+      "Native ruled writing areas",
+      "A paced sequence from observation to review"
+    ],
+    "pdf": "/assets/make-room/publication.pdf"
+  },
+  {
+    "name": "16-Signal",
+    "title": "Signal",
+    "format": "Brand guidelines",
+    "pages": 8,
+    "size_mm": [
+      240,
+      240
+    ],
+    "slug": "signal",
+    "category": "Other formats",
+    "headline": "A small identity system people can use.",
+    "summary": "An eight-page brand-guide study with typography, colour and layout examples.",
+    "brief": "Demonstrate how a wordmark, accent colour and type hierarchy work together in practical applications.",
+    "details": [
+      "Native wordmark and colour samples",
+      "Typography and clear-space guidance",
+      "An editable notice-layout example"
+    ],
+    "pdf": "/assets/signal/publication.pdf"
+  },
+  {
+    "name": "17-Structure",
+    "title": "Structure",
+    "format": "Architecture observation monograph",
+    "pages": 6,
+    "size_mm": [
+      280,
+      210
+    ],
+    "slug": "structure",
+    "category": "Editorial",
+    "headline": "A study of surface, rhythm and the built edge.",
+    "summary": "A landscape architecture publication using independently credited building photography.",
+    "brief": "Shift between a reflective façade and a wider street view without claiming authorship of the photographed buildings.",
+    "details": [
+      "Landscape editorial format",
+      "Large image crops and three-column observations",
+      "Clearly attributed architectural references"
+    ],
+    "pdf": "/assets/structure/publication.pdf"
+  },
+  {
+    "name": "18-Stillhouse",
+    "title": "Stillhouse",
+    "format": "Hospitality brochure",
+    "pages": 6,
+    "size_mm": [
+      220,
+      220
+    ],
+    "slug": "stillhouse",
+    "category": "Brochures",
+    "headline": "A hospitality brochure with a slower rhythm.",
+    "summary": "A square brochure study using arch-shaped frames and restrained serif typography.",
+    "brief": "Balance an atmospheric introduction with practical information structure. The photographs are independently sourced references, not a property offered for booking.",
+    "details": [
+      "Arch-shaped and elliptical image frames",
+      "Serif headlines with concise supporting copy",
+      "An editable room-information table"
+    ],
+    "pdf": "/assets/stillhouse/publication.pdf"
+  },
+  {
+    "name": "19-Open-House",
+    "title": "Open House",
+    "format": "Exhibition visitor guide",
+    "pages": 6,
+    "size_mm": [
+      170,
+      260
+    ],
+    "slug": "open-house",
+    "category": "Brochures",
+    "headline": "A visitor guide that makes space for a question.",
+    "summary": "A compact exhibition-guide study moving between context, detail and visitor prompts.",
+    "brief": "Keep explanatory labels separate from reflective questions and offer a page for visitors to record an observation.",
+    "details": [
+      "Tall compact format",
+      "Circular object-detail crop",
+      "Editable visitor prompts and writing lines"
+    ],
+    "pdf": "/assets/open-house/publication.pdf"
+  },
+  {
+    "name": "20-Pattern",
+    "title": "Pattern",
+    "format": "Textile material reference catalog",
+    "pages": 6,
+    "size_mm": [
+      250,
+      200
+    ],
+    "slug": "pattern",
+    "category": "Catalogs",
+    "headline": "Texture, scale and a consistent reference system.",
+    "summary": "A landscape textile-reference catalog with specimen crops and information fields.",
+    "brief": "Explore how crop and scale change the reading of a surface while keeping live supplier claims out of the sample content.",
+    "details": [
+      "Landscape product-reference layout",
+      "Editable specification-field table",
+      "Contrasting circular and rectangular texture crops"
+    ],
+    "pdf": "/assets/pattern/publication.pdf"
+  },
+  {
+    "name": "Current-01-halvorsen-quill",
+    "title": "Halvorsen-Quill",
+    "format": "Company profile",
+    "category": "Brochures",
+    "pages": 16,
+    "size_mm": [
+      210,
+      297
+    ],
+    "headline": "Materials and capability, clearly presented.",
+    "summary": "A company brochure connecting material references, capability and a structured delivery process.",
+    "brief": "A company brochure connecting material references, capability and a structured delivery process.",
+    "details": [
+      "Material-led imagery",
+      "Native process diagram",
+      "Consistent service hierarchy"
+    ],
+    "refinement_pass": 11,
+    "slug": "halvorsen-quill",
+    "pdf": "/assets/halvorsen-quill/publication.pdf"
+  },
+  {
+    "name": "Current-02-linden-court",
+    "title": "Linden-Court",
+    "format": "Property brochure",
+    "category": "Brochures",
+    "pages": 20,
+    "size_mm": [
+      297,
+      210
+    ],
+    "headline": "A residence, explained from setting to plan.",
+    "summary": "A property brochure combining interior references, measured plans and an illustrated building overview.",
+    "brief": "A property brochure combining interior references, measured plans and an illustrated building overview.",
+    "details": [
+      "Native measured plans",
+      "Axonometric overview",
+      "Room and area comparisons"
+    ],
+    "refinement_pass": 11,
+    "slug": "linden-court",
+    "pdf": "/assets/linden-court/publication.pdf"
+  },
+  {
+    "name": "Current-18-calloway",
+    "title": "Calloway",
+    "format": "Annual report",
+    "category": "Reports",
+    "pages": 48,
+    "size_mm": [
+      210,
+      297
+    ],
+    "headline": "Performance with a visible financial structure.",
+    "summary": "A report that connects operating divisions, reconciled financial tables and management narrative.",
+    "brief": "A report that connects operating divisions, reconciled financial tables and management narrative.",
+    "details": [
+      "Divisional reconciliation diagram",
+      "Editable financial tables",
+      "Clear performance hierarchy"
+    ],
+    "refinement_pass": 11,
+    "slug": "calloway",
+    "pdf": "/assets/calloway/publication.pdf"
+  },
+  {
+    "name": "Current-19-fernloop",
+    "title": "Fernloop",
+    "format": "Impact report",
+    "category": "Reports",
+    "pages": 32,
+    "size_mm": [
+      210,
+      297
+    ],
+    "headline": "Community activity with context.",
+    "summary": "A programme report separating participation, activities and resource measures through a coherent editorial sequence.",
+    "brief": "A programme report separating participation, activities and resource measures through a coherent editorial sequence.",
+    "details": [
+      "Matched programme openings",
+      "Quarterly programme plots",
+      "Readable results and case studies"
+    ],
+    "refinement_pass": 11,
+    "slug": "fernloop",
+    "pdf": "/assets/fernloop/publication.pdf"
+  },
+  {
+    "name": "Current-20-distributed-work",
+    "title": "Distributed-Work",
+    "format": "Research white paper",
+    "category": "Reports",
+    "pages": 24,
+    "size_mm": [
+      216,
+      279
+    ],
+    "headline": "An argument designed for sustained reading.",
+    "summary": "A long-form paper with evidence, recommendations and a consistent reading system.",
+    "brief": "A long-form paper with evidence, recommendations and a consistent reading system.",
+    "details": [
+      "Structured recommendation panels",
+      "Threaded long-form text",
+      "Navigable editorial hierarchy"
+    ],
+    "refinement_pass": 11,
+    "slug": "distributed-work",
+    "pdf": "/assets/distributed-work/publication.pdf"
+  }
+]
