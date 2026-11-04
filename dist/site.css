@@ -314,3 +314,67 @@
  .case-board-03 .case-board-stage{height:260px}
  .case-board-stage img{max-width:45%}
 }
+
+/* Visual 40-work archive & readable case-study upgrade */
+/* Remove only the compact index overrides; retain the earlier 10 compositions and hero cards. */
+.archive-visual-gallery .library{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 20px}
+.archive-visual-gallery .library .project-card{grid-column:span 1;min-width:0;border:0;padding:0}
+.archive-visual-gallery .library .project-card.library-feature{grid-column:span 2}
+.archive-visual-gallery .library .project-card a{display:block}
+.archive-visual-gallery .library .portfolio-preview{width:100%;height:260px}
+.archive-visual-gallery .library .project-card.library-feature .portfolio-preview{width:100%;height:340px}
+.archive-visual-gallery .library .card-info{display:flex;justify-content:space-between;padding:15px 0 0;align-items:start}
+.archive-visual-gallery .library .card-info h3{font-size:19px}
+.archive-visual-gallery .library .project-card.library-feature .card-info h3{font-size:23px}
+.archive-visual-gallery .library .card-info p{font-size:12px}
+.archive-visual-gallery .library .card-num{display:block;font-size:11px}
+.archive-visual-gallery .library .preview-index{font-size:9px}
+.archive-visual-gallery .section-head{margin:35px 0 25px}
+
+.reading-highlight{margin:50px 0 65px;text-align:center}
+.reading-highlight .section-head{text-align:left}
+.reading-highlight>img{width:auto;max-width:min(100%,820px);max-height:none;display:block;margin:0 auto 18px;box-shadow:0 7px 20px #0002}
+.reading-highlight .inspect-source{background:#20201d;color:#fff;border:1px solid #20201d;padding:12px 22px;min-height:44px;font-size:14px}
+.reading-highlight .inspect-source:hover{background:#444}
+/* Each displayed source page receives its own generous viewing area. */
+.curated-case-study .readability-note{grid-column:1/-1;font-size:13px;line-height:1.6;color:var(--muted);max-width:830px;margin:6px 0 0}
+.curated-case-study .readable-board{height:auto!important;min-height:0!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,470px),1fr));align-items:start;justify-items:center;gap:32px;padding:42px clamp(15px,4vw,65px);overflow:visible}
+.curated-case-study .readable-sheet{width:100%;display:flex;flex-direction:column;align-items:center;gap:16px;min-width:0}
+.curated-case-study .readable-sheet img{display:block;width:auto!important;height:auto!important;max-height:none!important;max-width:min(100%,780px)!important;object-fit:contain!important;box-shadow:0 10px 25px #0002;filter:none}
+.curated-case-study .readable-sheet button{font-size:13px;border:1px solid currentColor;padding:11px 18px;background:#fff;color:#242424;min-height:44px;max-width:100%;white-space:normal}
+.curated-case-study .readable-sheet button:hover{background:#242424;color:#fff}
+.curated-case-study .case-board-01 .readable-board{grid-template-columns:minmax(0,1fr);padding-inline:clamp(15px,8vw,125px)}
+.curated-case-study .case-board-01 .readable-sheet{max-width:760px}
+.curated-case-study .detail-board .readable-sheet{max-width:700px}
+.curated-case-study .case-board figcaption{margin-top:14px}
+/* Preserve genuinely legible detail rather than minifying complete spreads. */
+.reader{width:min(1440px,98vw);max-width:98vw;height:96vh;max-height:96vh}
+.reader-content{padding:20px;height:calc(100% - 72px)}
+.reader-content.zoom{justify-content:flex-start}
+.reader-content.zoom img{min-width:1400px;max-width:none;width:1400px;height:auto;max-height:none;object-fit:contain}
+.reader-bar button{min-height:34px}
+@media(max-width:1190px){
+ .archive-visual-gallery .library{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .archive-visual-gallery .library .project-card.library-feature{grid-column:span 2}
+ .archive-visual-gallery .library .portfolio-preview{height:230px}
+ .archive-visual-gallery .library .project-card.library-feature .portfolio-preview{height:295px}
+ .curated-case-study .readable-board{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:750px){
+ .archive-visual-gallery .library{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 14px}
+ .archive-visual-gallery .library .project-card.library-feature{grid-column:span 2}
+ .archive-visual-gallery .library .portfolio-preview{height:200px}
+ .archive-visual-gallery .library .project-card.library-feature .portfolio-preview{height:260px}
+ .archive-visual-gallery .library .card-info h3{font-size:16px}
+ .archive-visual-gallery .library .project-card.library-feature .card-info h3{font-size:19px}
+ .curated-case-study .readable-board{grid-template-columns:minmax(0,1fr);padding:20px 10px;gap:28px}
+ .curated-case-study .readable-sheet{width:100%;max-width:600px}
+ .curated-case-study .readable-sheet img{width:100%!important;height:auto!important;max-width:100%!important}
+ .reader-content.zoom img{min-width:1100px;width:1100px}
+}
+@media(max-width:400px){
+ .archive-visual-gallery .library .portfolio-preview{height:174px}
+ .archive-visual-gallery .library .project-card.library-feature .portfolio-preview{height:220px}
+ .archive-visual-gallery .library .card-info h3{font-size:14px}
+ .archive-visual-gallery .library .card-info p{font-size:10px}
+}

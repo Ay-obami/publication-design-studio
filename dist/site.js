@@ -8,8 +8,19 @@ filters.forEach(f=>f.addEventListener('click',()=>{category=f.dataset.filter;fil
 const modal=document.querySelector('#page-reader');if(!modal)return;
 const pages=[...document.querySelectorAll('.page-thumb')],im=modal.querySelector('img'),counter=modal.querySelector('[data-counter]'),prev=modal.querySelector('[data-prev]'),next=modal.querySelector('[data-next]'),zoom=modal.querySelector('[data-zoom]'),content=modal.querySelector('.reader-content');
 let i=0,origin=null;
-function show(n){i=Math.max(0,Math.min(pages.length-1,n));im.src=pages[i].dataset.full;im.alt=pages[i].dataset.alt;counter.textContent='Page '+(i+1)+' of '+pages.length;prev.disabled=i===0;next.disabled=i===pages.length-1;content.classList.remove('zoom');zoom.setAttribute('aria-pressed','false');zoom.textContent='Zoom';content.scrollTop=0;content.scrollLeft=0;}
+function show(n){i=Math.max(0,Math.min(pages.length-1,n));im.src=pages[i].dataset.full;im.alt=pages[i].dataset.alt;counter.textContent='Page '+(i+1)+' of '+pages.length;prev.disabled=i===0;next.disabled=i===pages.length-1;content.classList.add('zoom');zoom.setAttribute('aria-pressed','true');zoom.textContent='Fit page';content.scrollTop=0;content.scrollLeft=0;}
 pages.forEach((p,n)=>p.addEventListener('click',()=>{origin=p;show(n);modal.showModal();document.body.style.overflow='hidden'}));
+document.querySelectorAll('[data-open-page]').forEach(button=>button.addEventListener('click',()=>{
+ const target=Math.max(0,Number(button.dataset.openPage)-1);
+ if(!pages[target])return;
+ origin=button;
+ show(target);
+ modal.showModal();
+ document.body.style.overflow='hidden';
+ content.classList.add('zoom');
+ zoom.setAttribute('aria-pressed','true');
+ zoom.textContent='Fit page';
+}));
 prev.addEventListener('click',()=>show(i-1));next.addEventListener('click',()=>show(i+1));
 zoom.addEventListener('click',()=>{const on=!content.classList.contains('zoom');content.classList.toggle('zoom',on);zoom.setAttribute('aria-pressed',String(on));zoom.textContent=on?'Fit page':'Zoom'});
 modal.querySelector('[data-close]').addEventListener('click',()=>modal.close());
