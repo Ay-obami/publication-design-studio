@@ -164,3 +164,4 @@ if "/* Reserve separate visual zones" in s:s=s.split("/* Reserve separate visual
 p.write_text(s+fix)
 import runpy
 runpy.run_path(str(ROOT/"vary-library.py"),run_name="__main__")
+runpy.run_path(str(ROOT/"vary-selected.py"),run_name="__main__")
