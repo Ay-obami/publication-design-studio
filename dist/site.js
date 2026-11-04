@@ -28,3 +28,11 @@ modal.addEventListener('close',()=>{document.body.style.overflow='';if(origin)or
 modal.addEventListener('click',e=>{const r=modal.getBoundingClientRect();if(e.target===modal&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))modal.close()});
 document.addEventListener('keydown',e=>{if(!modal.open)return;if(e.key==='ArrowLeft'){e.preventDefault();show(i-1)}if(e.key==='ArrowRight'){e.preventDefault();show(i+1)}});
 })();
+/* editorial collection jump links */
+document.querySelectorAll('[data-collection]').forEach(link=>{
+ link.addEventListener('click',()=>{
+   const key=link.getAttribute('data-collection');
+   const target=[...document.querySelectorAll('button[data-filter]')].find(el=>el.dataset.filter===key);
+   if(target){target.click();document.querySelector('#library')?.scrollIntoView({behavior:'smooth',block:'start'});}
+ });
+});

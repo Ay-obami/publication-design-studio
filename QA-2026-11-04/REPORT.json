@@ -1,0 +1,74 @@
+{
+  "project": "Ayobami Publication Studio",
+  "date": "2026-11-04",
+  "scope": "Website presentation and navigation only; no native InDesign edits",
+  "status": "PASS",
+  "responsive_widths": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "home_selected_work": 6,
+  "archive_projects": 40,
+  "archive_layout_variants": 10,
+  "archive_featured_cards": 4,
+  "collection_introductions": 4,
+  "collection_filter_click": "PASS",
+  "search": "PASS",
+  "javascript_errors": 0,
+  "horizontal_overflow_widths": [],
+  "missing_case_study_source_images": [],
+  "full_document_reader_fit_page_default": true,
+  "case_studies": [
+    {
+      "slug": "halvorsen-quill",
+      "boards": 3,
+      "pageCount": 5,
+      "unique": 5
+    },
+    {
+      "slug": "silence-quarterly",
+      "boards": 3,
+      "pageCount": 5,
+      "unique": 5
+    },
+    {
+      "slug": "quarterly-index",
+      "boards": 3,
+      "pageCount": 5,
+      "unique": 5
+    },
+    {
+      "slug": "clearpath-coaching",
+      "boards": 3,
+      "pageCount": 5,
+      "unique": 5
+    },
+    {
+      "slug": "orlathread",
+      "boards": 2,
+      "pageCount": 2,
+      "unique": 2
+    },
+    {
+      "slug": "calloway",
+      "boards": 3,
+      "pageCount": 5,
+      "unique": 5
+    }
+  ],
+  "visual_review_screenshots": [
+    "selected-mobile.png",
+    "selected-desktop.png",
+    "case-mobile.png",
+    "case-desktop.png",
+    "collections-mobile.png"
+  ],
+  "notes": [
+    "Site screenshots reviewed manually for headline sizing, image placement, margins and mobile case-study readability.",
+    "All curated case-study art is exported from the existing InDesign publications. No original publication source modified.",
+    "Orlathread has two original source pages and is intentionally shown in two boards, avoiding repeated artwork."
+  ]
+}
