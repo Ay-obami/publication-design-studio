@@ -162,13 +162,13 @@ inject="""document.querySelectorAll('[data-open-page]').forEach(button=>button.a
  show(target);
  modal.showModal();
  document.body.style.overflow='hidden';
- content.classList.add('zoom');
- zoom.setAttribute('aria-pressed','true');
- zoom.textContent='Fit page';
+ content.classList.remove('zoom');
+ zoom.setAttribute('aria-pressed','false');
+ zoom.textContent='Zoom';
 }));
 """
 if inject not in js:js=js.replace(needle,inject+needle)
-# Full-page thumbnails now open at reading size rather than an unreadable fit-to-window size.
-js=js.replace("content.classList.remove('zoom');zoom.setAttribute('aria-pressed','false');zoom.textContent='Zoom';", "content.classList.add('zoom');zoom.setAttribute('aria-pressed','true');zoom.textContent='Fit page';")
+# Fit to page is the default. Zoom remains optional and user-controlled.
+js=js.replace("content.classList.add('zoom');zoom.setAttribute('aria-pressed','true');zoom.textContent='Fit page';content.scrollTop=0", "content.classList.remove('zoom');zoom.setAttribute('aria-pressed','false');zoom.textContent='Zoom';content.scrollTop=0")
 js_path.write_text(js)
 print("40-work visual archive restored; six case studies upgraded for readable large pages and direct inspection.")
