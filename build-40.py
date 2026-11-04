@@ -131,4 +131,6 @@ shutil.rmtree(ROOT/"dist",ignore_errors=True)
 shutil.copytree(OUT,ROOT/"dist")
 import runpy
 runpy.run_path(str(ROOT/"refine-website.py"),run_name="__main__")
+# Restore high-fidelity website imagery from the canonical PDFs, not prior web assets.
+runpy.run_path(str(ROOT/"render-quality.py"),run_name="__main__")
 print("CLIENT-FOCUSED DIST READY",flush=True)

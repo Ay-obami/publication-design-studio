@@ -11,3 +11,5 @@ Run: `python3 -m http.server 8080 --directory dist`.
 This is independent, self-initiated portfolio work, not a record of paid client commissions. Quality upgrades are ongoing for some publications. Photography is credited in the individual source packages.
 
 Visual design: category features use original exported publication covers and pages. All four presentations are authored HTML/CSS (no image generation) and vary in layout, color and typography. The original native InDesign source remains untouched.
+
+Image-quality pipeline: `python3 render-quality.py` re-renders all page images from the canonical original PDF packages at 1680px or 2000px width (for selected projects), WebP 89, 460px thumbnails and 2400px portfolio compositions. It does not upscale the previous WebPs. This is also invoked at the end of `build-40.py`. The source packages and original PDFs remain unchanged.
