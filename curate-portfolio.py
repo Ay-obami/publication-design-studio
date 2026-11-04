@@ -4,7 +4,7 @@ and a vector PDF lookbook. Art and imagery come from the user's own InDesign PDF
 """
 from pathlib import Path
 from bs4 import BeautifulSoup
-import json,re
+import json,re,textwrap
 import pymupdf
 
 ROOT=Path(__file__).resolve().parent
@@ -262,14 +262,14 @@ for no,f in enumerate(FEATURES,1):
  txt(pg,(48,62),f"{no:02d}  /  {f['eyebrow'].upper()}",11,color=ACCENT)
  txt(pg,(48,120),b["title"].replace("-"," "),30,font="hebo")
  y=169
- for line in [f["headline"][:49],f["headline"][49:97]]:
-  if line:txt(pg,(48,y),line,17);y+=23
+ for line in textwrap.wrap(f["headline"],49)[:2]:
+  txt(pg,(48,y),line,17);y+=23
  txt(pg,(48,255),"THE DESIGN CHALLENGE",10,color=ACCENT)
- txt(pg,(48,278),f["problem"][:68],11)
- txt(pg,(48,299),f["problem"][68:129],11)
+ for i,line in enumerate(textwrap.wrap(f["problem"],68)[:2]):
+  txt(pg,(48,278+i*21),line,11)
  txt(pg,(48,356),"THE APPROACH",10,color=ACCENT)
- txt(pg,(48,379),f["solution"][:68],11)
- txt(pg,(48,400),f["solution"][68:129],11)
+ for i,line in enumerate(textwrap.wrap(f["solution"],68)[:2]):
+  txt(pg,(48,379+i*21),line,11)
  fit_source(pg,src,picks[0],(520,65,786,515));npage+=1;footer(pg,npage)
  # Interior spread: original vector PDF pages, side by side.
  pg=start_page()
@@ -290,7 +290,7 @@ txt(last,(56,170),"that deserves to be read.",35,font="hebo")
 txt(last,(56,259),"Services",14,color=ACCENT)
 txt(last,(56,291),"Reports, magazines, catalogs, brochures, books and workbooks.",16)
 txt(last,(56,363),"Portfolio: ayobami-publication-studio.vercel.app",14)
-txt(last,(56,393),"Enquiries: fiverr.com/ay_obam1",14)
+txt(last,(56,393),"Project enquiries: github.com/Ay-obami/publication-design-studio",14)
 txt(last,(56,471),"Portfolio samples are self-initiated exercises; not paid-client commissions.",10,color=MID)
 npage+=1;footer(last,npage)
 assert npage==20,npage
