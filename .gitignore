@@ -1,0 +1,6 @@
+.vercel/
+rendered/
+*-log.txt
+.env
+.env.*
+build-site-before-refinement11.py
