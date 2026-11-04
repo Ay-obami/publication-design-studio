@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "description": "Six compositionally distinct editorial plates from real original InDesign export pages; no native publication editing",
+  "responsive_sizes": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "horizontal_overflow": [],
+  "javascript_errors": [],
+  "featured_projects": 6,
+  "images_validated": 15,
+  "visible_source_images_loaded": true,
+  "layout": "Full-width architecture / five-column fashion / seven-column data / seven-column workbook / five-column fold-out / full-width annual report",
+  "archive_preserved": "40 entries / 10 variants / filters and search (regression test)",
+  "reader": "Fit Page default preserved (regression test)",
+  "screenshots": [
+    "selected-desktop.png",
+    "selected-mobile.png"
+  ],
+  "source_images": "Original InDesign-exported WebP; no AI-generated artwork"
+}
