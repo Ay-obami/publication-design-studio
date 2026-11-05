@@ -18,25 +18,19 @@ shutil.copy2(PROC/'Calloway-Raw-Source-Demo.docx',DOWNLOADS/'calloway-raw-source
 def load(p): return BeautifulSoup(p.read_text(),'html.parser')
 def save(p,s): p.write_text(str(s))
 
-# Homepage: keep Halvorsen as visual flagship and surface Calloway as the process flagship.
+# Homepage: keep Halvorsen first visually and surface Calloway as the deeper process case.
 hp=SITE/'index.html'
 s=load(hp)
-for href,kind,label,desc in [
-    ('/work/halvorsen-quill/','visual','Visual flagship','Visual flagship — a quieter architecture profile built around scale, space and editorial restraint.'),
-    ('/work/calloway/','process','Process flagship','Process flagship — working draft to 48-page annual report, including system, QA and handoff.')
+for href,desc in [
+    ('/work/halvorsen-quill/','A quieter architecture profile built around scale, space and editorial restraint.'),
+    ('/work/calloway/','Working draft to 48-page annual report, including system, QA and handoff.')
 ]:
     link=s.select_one(f'a[href="{href}"]')
     card=link.find_parent('article') if link else None
     if not card: continue
-    classes=list(card.get('class',[]))
-    for c in ['flagship-card',f'flagship-{kind}']:
-        if c not in classes: classes.append(c)
-    card['class']=classes
-    stage=card.select_one('.plate-stage')
-    if stage and not stage.select_one('.flagship-badge'):
-        badge=s.new_tag('span',attrs={'class':'flagship-badge'})
-        badge.string=label
-        stage.insert(0,badge)
+    for badge in card.select('.flagship-badge'):
+        badge.decompose()
+    card['class']=[c for c in card.get('class',[]) if c not in ('flagship-card','flagship-visual','flagship-process')]
     d=card.select_one('.selected-project-descriptor')
     if d: d.string=desc
 
@@ -44,7 +38,7 @@ selected=s.select_one('#selected')
 if selected:
     h=selected.select_one('.section-head h2')
     p=selected.select_one('.section-head p')
-    if h: h.string='Selected flagships & case studies'
+    if h: h.string='Selected work & case studies'
     if p: p.string='Visual direction, editorial systems and one complete publication-production workflow.'
     old=s.select_one('.process-feature-home')
     if old: old.decompose()
@@ -63,7 +57,7 @@ if selected:
     selected.insert_after(feature)
 save(hp,s)
 
-# Calloway: process flagship.
+# Calloway: full production-process case study.
 cp=SITE/'work'/'calloway'/'index.html'
 s=load(cp)
 if s.title: s.title.string='Calloway Process Case Study | Ayobami — Publication Design'
@@ -74,7 +68,7 @@ if heading:
     crumb=heading.select_one('.breadcrumbs')
     if crumb: crumb.clear(); crumb.append(BeautifulSoup('<a href="/work/">← All publications</a> / Reports','html.parser'))
     eye=heading.select_one('.eyebrow')
-    if eye: eye.string='Process flagship / independent Adobe InDesign study'
+    if eye: eye.string='Production process case study / independent Adobe InDesign study'
     deck=heading.select_one('.deck')
     if deck: deck.string='48 pages · Annual report · Adobe InDesign · Full production workflow documented'
     if not heading.select_one('a[href="#process-case"]'):
@@ -88,7 +82,7 @@ if old: old.decompose()
 
 process=BeautifulSoup('''<section class="process-case" id="process-case">
 <div class="process-hero">
-<div><span class="eyebrow">Flagship process case study</span><h2>From working draft<br><em>to a 48-page report.</em></h2></div>
+<div><span class="eyebrow">Publication production case study</span><h2>From working draft<br><em>to a 48-page report.</em></h2></div>
 <div><p>This is an independent production study for the fictional Calloway Holdings. The company and financial data are synthetic. The reconstructed Word file below was created from the same content model to demonstrate the kind of unstructured source material a publication designer has to turn into a dependable document system.</p><div class="process-stats"><span><strong>48</strong> mapped pages</span><span><strong>12</strong> columns</span><span><strong>27</strong> financial reconciliations</span><span><strong>INDD + IDML</strong> handoff</span></div></div>
 </div>
 
@@ -155,11 +149,10 @@ save(cp,s)
 
 cssp=SITE/'site.css'
 css=cssp.read_text()
-marker='/* Flagship process case v7 */'
+marker='/* Publication process case v7 */'
 if marker in css: css=css.split(marker)[0]
 css += r'''
-/* Flagship process case v7 */
-.flagship-card .plate-stage{position:relative}.flagship-badge{position:absolute;z-index:8;top:16px;left:16px;padding:7px 10px;background:var(--ink);color:#fff;font-size:9px;letter-spacing:.13em;text-transform:uppercase}.flagship-process .flagship-badge{background:var(--accent)}
+/* Publication process case v7 */
 .process-feature-home{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,70px);align-items:center;margin:62px 0 82px;padding:42px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process-feature-copy h2{font-family:var(--display);font-size:clamp(34px,4.8vw,64px);font-weight:400;line-height:1.04;letter-spacing:-.045em;margin:14px 0 18px}.process-feature-copy>p{font-size:15px;line-height:1.7;color:var(--muted)}.process-feature-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:24px}.process-feature-media{display:grid;grid-template-columns:1.3fr .7fr;gap:16px;align-items:end;background:#e8e5df;padding:24px}.process-feature-media figure{margin:0}.process-feature-media img{display:block;width:100%;height:auto}.process-feature-before{transform:rotate(-1deg)}.process-feature-after{transform:rotate(2deg)}.process-feature-media figcaption,.process-step-media figcaption,.approval-grid figcaption{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:9px}
 .process-case{margin:35px 0 80px}.process-hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,85px);padding:48px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process-hero h2{font-family:var(--display);font-size:clamp(42px,6vw,78px);line-height:1.01;font-weight:400;letter-spacing:-.055em;margin:14px 0}.process-hero h2 em{color:var(--accent)}.process-hero p{font-size:16px;line-height:1.75;color:var(--muted)}.process-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:24px}.process-stats span{padding:15px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:11px;color:var(--muted)}.process-stats strong{display:block;color:var(--ink);font-size:18px;margin-bottom:3px}
 .process-step{padding:62px 0;border-bottom:1px solid var(--line)}.process-step-copy{max-width:790px;margin-bottom:28px}.process-kicker{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700}.process-step h3,.process-close h3{font-family:var(--display);font-size:clamp(31px,4vw,50px);font-weight:400;line-height:1.08;letter-spacing:-.04em;margin:13px 0 16px}.process-step-copy>p{font-size:15px;line-height:1.75;color:var(--muted)}.process-step-media{margin:0}.process-step-media img{display:block;width:100%;height:auto;background:#e8e5df}.process-source-media{padding:22px;background:#e8e5df}.process-audit-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.process-audit-grid>div{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.process-audit-grid strong{font-size:10px;color:var(--accent);letter-spacing:.13em}.process-audit-grid span{display:block;font-size:16px;font-weight:600;margin:12px 0 8px}.process-audit-grid p{font-size:12px;line-height:1.55;color:var(--muted);margin:0}.process-system{display:grid;grid-template-columns:.7fr 1.3fr;gap:42px;align-items:start}.process-system .process-step-copy{margin:0}.process-system-specs,.handoff-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.process-system-specs span,.handoff-facts span{border:1px solid var(--line);padding:8px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.07em}.approval-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:#e8e5df;padding:26px;align-items:end}.approval-grid figure{margin:0}.approval-grid img{display:block;width:100%;height:auto;filter:drop-shadow(4px 5px 7px #0002)}.process-all-pages img{border:1px solid var(--line)}.process-handoff{display:grid;grid-template-columns:1fr .85fr;gap:50px}.process-handoff .process-step-copy{margin:0}.handoff-tree{background:#171717;color:#f4f0e8;padding:28px 30px;align-self:start}.tree-label{display:block;color:#c7775e;font-size:10px;letter-spacing:.14em;margin-bottom:18px}.handoff-tree code{white-space:pre-wrap;display:block;font:13px/1.75 ui-monospace,SFMono-Regular,Menlo,monospace}.handoff-tree p{font-size:11px;color:#bcb8b0;margin:18px 0 0}.process-close{padding:58px 0 15px;max-width:820px}.process-close .button{margin-top:8px}
