@@ -41,7 +41,7 @@ process='''<section class="freelance-process" id="process"><div class="section-h
 <article><span>02 / DIRECTION</span><h3>Agree on a visual style</h3><p>We review a cover and representative spread before the full layout is developed.</p></article>
 <article><span>03 / LAYOUT</span><h3>Build the full document</h3><p>I apply the agreed type, grid, imagery and information hierarchy across your pages.</p></article>
 <article><span>04 / HANDOVER</span><h3>Review and receive your files</h3><p>We complete agreed revisions and prepare the relevant PDF, INDD and IDML deliverables.</p></article></div></section>'''
-cta='''<section class="freelance-cta" id="contact"><div><span class="eyebrow">HAVE A PUBLICATION IN MIND?</span><h2>Let's make it<br><em>easy to read.</em></h2><p>Send me a short description of your project, approximate page count, and when you need it. I'll help you work out the right layout and deliverables.</p></div><a class="button" href="https://github.com/Ay-obami/publication-design-studio/issues/new?title=Publication%20design%20enquiry" target="_blank" rel="noopener">Discuss your publication ↗</a></section>'''
+cta='''<section class="freelance-cta" id="contact"><div><span class="eyebrow">HAVE A PUBLICATION IN MIND?</span><h2>Let's make it<br><em>easy to read.</em></h2><p>Send me a short description of your project, approximate page count, and when you need it. I'll help you work out the right layout and deliverables.</p></div><a class="button" href="mailto:oyebisiayobami26@gmail.com?subject=Publication%20design%20enquiry">Email me about your publication ↗</a></section>'''
 home=home.replace('</main>',process+cta+'</main>',1)
 (D/"index.html").write_text(home)
 # Update information architecture for commercial clients.
