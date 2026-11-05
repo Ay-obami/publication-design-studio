@@ -290,7 +290,7 @@ txt(last,(56,170),"that deserves to be read.",35,font="hebo")
 txt(last,(56,259),"Services",14,color=ACCENT)
 txt(last,(56,291),"Reports, magazines, catalogs, brochures, books and workbooks.",16)
 txt(last,(56,363),"Portfolio: ayobami-publication-studio.vercel.app",14)
-txt(last,(56,393),"Project enquiries: github.com/Ay-obami/publication-design-studio",14)
+txt(last,(56,393),"Email: oyebisiayobami26@gmail.com",14)
 txt(last,(56,471),"Portfolio samples are self-initiated exercises; not paid-client commissions.",10,color=MID)
 npage+=1;footer(last,npage)
 assert npage==20,npage
