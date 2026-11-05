@@ -146,3 +146,7 @@ runpy.run_path(str(ROOT/"editorial-plates-v4.py"),run_name="__main__")
 # Final responsive hero, spacing, link and copy polish.
 runpy.run_path(str(ROOT/"polish-homepage-v5.py"),run_name="__main__")
 print("CLIENT-FOCUSED DIST READY",flush=True)
+
+# Flagship roles and full Calloway production case study.
+runpy.run_path(str(ROOT/"flagship-process-v7.py"),run_name="__main__")
+print("FLAGSHIP PROCESS CASE READY",flush=True)
