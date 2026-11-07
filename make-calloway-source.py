@@ -5,7 +5,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from pathlib import Path
 import json, random
 
-root=Path('/home/ayobami/Documents/publication-design-studio-buyer-upgrade')
+root=Path(__file__).resolve().parent
 src=Path('/home/ayobami/Documents/Approved-Portfolio/01-Approved-Native-Projects/Complete-20-Project-Collection/18-calloway/CONTENT/publication.json')
 data=json.loads(src.read_text())
 m=data['model']
@@ -26,9 +26,9 @@ r=p.add_run('ANNUAL REPORT 2026 – WORKING DRAFT')
 r.bold=True; r.font.name='Calibri'; r.font.size=Pt(17)
 
 p=d.add_paragraph()
-r=p.add_run('DEMONSTRATION SOURCE DOCUMENT')
+r=p.add_run('WORKING SOURCE DOCUMENT')
 r.bold=True; r.font.name='Arial'; r.font.size=Pt(10); r.font.color.rgb=RGBColor(180,65,45)
-p.add_run('\nReconstructed from the synthetic Calloway portfolio content model to demonstrate a realistic publication-design workflow. It is not a client-supplied historical file.')
+p.add_run('\nManagement commentary, divisional information and financial tables prepared for publication design.')
 
 p=d.add_paragraph('NOTES FOR DESIGNER: please make this feel professional / annual report. Need something modern but serious. Some charts can be pulled from the numbers below. Images supplied separately. Page count approx 45–50.')
 p.runs[0].font.name='Calibri'; p.runs[0].font.size=Pt(11)
@@ -126,13 +126,13 @@ fin_table('FINANCIAL POSITION',[('Tangible assets','ppe'),('Intangibles','intang
 fin_table('CASH / FUNDING',[('Opening cash','opening_cash'),('Operating cash','operating_cash'),('Capex','capex'),('Bank debt','bank_debt'),('Other debt','other_debt'),('Closing cash','cash')])
 
 heading('NOTES / GLOSSARY / SHAREHOLDER INFO',1,0)
-body('Need basis, segments, asset roll-forward, funding, definitions and fictional contact information. Keep note numbers easy to follow from statements.',0)
+body('Need basis, segments, asset roll-forward, funding, definitions and publication contact information. Keep note numbers easy to follow from statements.',0)
 body('Definitions: EBITDA = operating profit plus non-cash asset charges. Net debt = gross borrowing less cash. Intensity = measure divided by stated activity denominator.',2)
 
 p=d.add_paragraph()
 p.add_run('END OF WORKING DRAFT — CONTENT STILL NEEDS DESIGN SYSTEM / PAGE ARCHITECTURE / FINAL QA').bold=True
 p.runs[0].font.color.rgb=RGBColor(180,65,45)
 
-path=out/'Calloway-Raw-Source-Demo.docx'
+path=out/'Calloway-Working-Source.docx'
 d.save(path)
 print(path)

@@ -25,14 +25,14 @@ tiles=[
     actual("Catalogs &amp; brochures","fernloop","Catalogs","catalogs","Fernloop","Clear product information with a distinct visual identity.","Catalogs · Lookbooks · Brochures"),
     actual("Books &amp; workbooks","clearpath-coaching","Brochures","workbooks","Clearpath Coaching","Long-form reading, learning materials, and usable page layouts.","Guides · Workbooks · Interactive PDFs")
 ]
-categories='''<section class="services-feature" id="services"><div class="section-head"><h2>What I can design for you</h2><p>Choose the type of publication you need. Each example uses real pages from my InDesign portfolio, not generated mockups.</p></div><div class="service-gallery">'''+''.join(tiles)+'''</div><p class="service-disclosure">Portfolio projects are self-initiated design studies, not commissioned client work. Covers and interiors shown are taken from the actual publication files.</p></section>'''
+categories='''<section class="services-feature" id="services"><div class="section-head"><h2>What I can design for you</h2><p>Choose the type of publication you need. Each example uses real pages from my InDesign portfolio, not generated mockups.</p></div><div class="service-gallery">'''+''.join(tiles)+'''</div><p class="service-disclosure">Publication design and production by Ayobami.</p></section>'''
 # Remove any previous inserted categories and process sections to make reruns idempotent.
 home=re.sub(r'<section class="services-feature" id="services">.*?</section>','',home,flags=re.S)
 home=re.sub(r'<section class="freelance-process" id="process">.*?</section>','',home,flags=re.S)
 home=re.sub(r'<section class="freelance-cta" id="contact">.*?</section>','',home,flags=re.S)
 home=home.replace('<section id="selected">',categories+'<section id="selected">',1)
 home=home.replace('Clear pages.<br><em>Distinct character.</em>','Publication design<br><em>that works for you.</em>')
-home=home.replace('Forty publication studies, each built around the way its content deserves to be read.','I design magazines, catalogs, reports, brochures and workbooks in Adobe InDesign. See real page layouts, inspect complete publications, and find an approach that fits your content.')
+home=home.replace('Publications built around the way their content deserves to be read.','I design magazines, catalogs, reports, brochures and workbooks in Adobe InDesign. See real page layouts, inspect complete publications, and find an approach that fits your content.')
 home=home.replace('Explore selected work ↘','See what I design ↘')
 home=home.replace('href="#selected">See what I design','href="#services">See what I design')
 home=home.replace('A range of editorial, print and information design.','Selected publication studies. Open any project for the full PDF and every page.')
@@ -52,7 +52,7 @@ for page in ["index.html","about/index.html","credits/index.html"]:
   html=html.replace('<a href="/#selected">Selected work</a>','<a href="/#services">Services</a><a href="/#selected">Selected work</a>')
  html=html.replace('<a href="/#library">All publications</a>','<a href="/#library">All publications</a>')
  if page=="index.html":
-  html=html.replace('Independent publication design / InDesign','Freelance publication designer / Adobe InDesign')
+  html=html.replace('Publication design / InDesign','Freelance publication designer / Adobe InDesign')
  p.write_text(html)
 # Project pages also lead clients to service context.
 for p in (D/"work").glob("*/index.html"):

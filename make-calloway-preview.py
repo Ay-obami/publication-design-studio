@@ -1,6 +1,6 @@
 from PIL import Image,ImageOps,ImageDraw
 from pathlib import Path
-root=Path('/home/ayobami/Documents/publication-design-studio-buyer-upgrade/process-assets/calloway')
+root=Path(__file__).resolve().parent/'process-assets/calloway'
 imgs=[Image.open(root/'rendered'/f'source-page-{n}.png').convert('RGB') for n in (1,2,4)]
 target_h=1180
 scaled=[]

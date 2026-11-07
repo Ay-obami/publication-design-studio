@@ -1,1 +1,12 @@
-{"framework": null, "outputDirectory": "dist", "cleanUrls": true}
+{
+  "framework": null,
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/downloads/calloway-raw-source-demo.docx",
+      "destination": "/downloads/calloway-working-source.docx",
+      "permanent": true
+    }
+  ]
+}

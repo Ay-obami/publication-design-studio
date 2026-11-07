@@ -14,7 +14,7 @@ assert section and len(section.select(".project-card"))==40
 section["class"]=["archive-visual-gallery"]
 heading=section.select_one(".section-head")
 heading.select_one("h2").string="The complete portfolio"
-heading.select_one("p").string="40 publication designs. The varied visual presentation is back, with ten original layouts and four larger features. Filter or search to find a relevant example."
+heading.select_one("p").string="Explore 40 publications across reports, editorial design, catalogs, brochures and workbooks. Filter or search to find a relevant format."
 archive.write_text(str(s))
 
 # Case boards: make selected page one-per-row readable and offer an obvious

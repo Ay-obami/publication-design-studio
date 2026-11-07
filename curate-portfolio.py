@@ -56,7 +56,7 @@ main=archive.select_one("main")
 main.clear()
 lead=html('''<section class="archive-intro"><span class="eyebrow">The complete collection / 2026</span>
 <h1>Every publication,<br><em>in one place.</em></h1>
-<p>Forty self-initiated Adobe InDesign studies. Browse the collection by format, search by name, or open any publication to inspect the complete page sequence.</p>
+<p>Browse the publication collection by format, search by name, or open a project to explore the complete page sequence.</p>
 <div class="archive-meta"><span>40 publications</span><span>538 viewing-copy pages</span><a href="/downloads/ayobami-selected-publications-2026.pdf" download>Download selected portfolio PDF ↓</a></div>
 </section>''')
 main.append(lead)

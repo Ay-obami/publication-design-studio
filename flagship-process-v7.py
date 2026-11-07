@@ -13,7 +13,7 @@ DOWNLOADS.mkdir(parents=True,exist_ok=True)
 
 for name in ['raw-source-preview.webp','indesign-anatomy.jpg','all-48-pages.jpg']:
     shutil.copy2(PROC/name,ASSET/name)
-shutil.copy2(PROC/'Calloway-Raw-Source-Demo.docx',DOWNLOADS/'calloway-raw-source-demo.docx')
+shutil.copy2(PROC/'Calloway-Working-Source.docx',DOWNLOADS/'calloway-working-source.docx')
 
 def load(p): return BeautifulSoup(p.read_text(),'html.parser')
 def save(p,s): p.write_text(str(s))
@@ -46,11 +46,11 @@ if selected:
 <div class="process-feature-copy">
 <span class="eyebrow">See how I work / Calloway</span>
 <h2>From a working draft to a 48-page annual report.</h2>
-<p>The finished pages are only the end of the job. This process study shows the source content, content audit, grid and hierarchy, representative approval pages, full document build, QA and editable handoff.</p>
-<div class="process-feature-actions"><a class="button" href="/work/calloway/#process-case">See the full workflow ↗</a><a class="text-link" href="/downloads/calloway-raw-source-demo.docx">Inspect the source demo ↓</a></div>
+<p>The finished pages are only the end of the job. This workflow shows the source content, content audit, grid and hierarchy, representative approval pages, full document build, QA and editable handoff.</p>
+<div class="process-feature-actions"><a class="button" href="/work/calloway/#process-case">See the full workflow ↗</a><a class="text-link" href="/downloads/calloway-working-source.docx">Inspect the working source ↓</a></div>
 </div>
 <div class="process-feature-media">
-<figure class="process-feature-before"><img src="/assets/calloway/process/raw-source-preview.webp" alt="Reconstructed Calloway Word source document before publication design" loading="lazy"><figcaption>01 / Source content</figcaption></figure>
+<figure class="process-feature-before"><img src="/assets/calloway/process/raw-source-preview.webp" alt="Calloway working Word document before publication design" loading="lazy"><figcaption>01 / Source content</figcaption></figure>
 <figure class="process-feature-after"><img src="/assets/calloway/page-37.webp?v=highres2" alt="Calloway finished annual report financial statement page" loading="lazy"><figcaption>05 / Finished publication</figcaption></figure>
 </div>
 </section>''','html.parser').select_one('section')
@@ -68,7 +68,7 @@ if heading:
     crumb=heading.select_one('.breadcrumbs')
     if crumb: crumb.clear(); crumb.append(BeautifulSoup('<a href="/work/">← All publications</a> / Reports','html.parser'))
     eye=heading.select_one('.eyebrow')
-    if eye: eye.string='Production process case study / independent Adobe InDesign study'
+    if eye: eye.string='Annual report production'
     deck=heading.select_one('.deck')
     if deck: deck.string='48 pages · Annual report · Adobe InDesign · Full production workflow documented'
     if not heading.select_one('a[href="#process-case"]'):
@@ -83,12 +83,12 @@ if old: old.decompose()
 process=BeautifulSoup('''<section class="process-case" id="process-case">
 <div class="process-hero">
 <div><span class="eyebrow">Publication production case study</span><h2>From working draft<br><em>to a 48-page report.</em></h2></div>
-<div><p>This is an independent production study for the fictional Calloway Holdings. The company and financial data are synthetic. The reconstructed Word file below was created from the same content model to demonstrate the kind of unstructured source material a publication designer has to turn into a dependable document system.</p><div class="process-stats"><span><strong>48</strong> mapped pages</span><span><strong>12</strong> columns</span><span><strong>27</strong> financial reconciliations</span><span><strong>INDD + IDML</strong> handoff</span></div></div>
+<div><p>The Calloway report brings management commentary, divisional comparisons and a reconciled financial model into a consistent publication system. The working Word document shows the content structure before page design.</p><div class="process-stats"><span><strong>48</strong> mapped pages</span><span><strong>12</strong> columns</span><span><strong>27</strong> financial reconciliations</span><span><strong>INDD + IDML</strong> handoff</span></div></div>
 </div>
 
 <article class="process-step process-source">
-<div class="process-step-copy"><span class="process-kicker">01 / SOURCE</span><h3>Start with content, not a pretty spread.</h3><p>The reconstructed Word draft deliberately mixes rough hierarchy, notes to the designer, tables, image placeholders and inconsistent direct formatting. It is not claimed as a historical client file; it is a transparent demonstration of the source-to-layout problem.</p><a class="text-link" href="/downloads/calloway-raw-source-demo.docx">Download the reconstructed Word source ↓</a></div>
-<figure class="process-step-media process-source-media"><img src="/assets/calloway/process/raw-source-preview.webp" alt="Three pages from the reconstructed Calloway Word source document" loading="lazy"><figcaption>Reconstructed source document / 4 Word pages / same synthetic content model</figcaption></figure>
+<div class="process-step-copy"><span class="process-kicker">01 / SOURCE</span><h3>Start with content, not a pretty spread.</h3><p>The working Word document combines headings, production notes, tables and image references. The design resolves these elements into a readable hierarchy, reusable styles and a dependable page sequence.</p><a class="text-link" href="/downloads/calloway-working-source.docx">Download the working Word document ↓</a></div>
+<figure class="process-step-media process-source-media"><img src="/assets/calloway/process/raw-source-preview.webp" alt="Three pages from the Calloway working Word document" loading="lazy"><figcaption>Working source document / 4 Word pages</figcaption></figure>
 </article>
 
 <article class="process-step process-audit">
